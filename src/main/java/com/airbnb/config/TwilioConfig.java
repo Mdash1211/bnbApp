@@ -8,9 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import com.twilio.Twilio;
 import com.twilio.http.TwilioRestClient;
 
+
 @Configuration
 public class TwilioConfig {
-  private static final Logger logger = LoggerFactory.getLogger(TwilioConfig.class);
+    private static final Logger logger = LoggerFactory.getLogger(TwilioConfig.class);
 
     @Value("${twilio.account.sid}")
     private String accountSid;
@@ -33,3 +34,13 @@ public class TwilioConfig {
         return fromNumber;
     }
 }
+
+
+
+
+
+
+
+
+
+
